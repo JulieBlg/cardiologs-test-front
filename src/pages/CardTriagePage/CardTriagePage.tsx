@@ -1,51 +1,34 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { Container, Grid, InputAdornment, TextField, makeStyles } from '@material-ui/core';
 import { Search } from '@material-ui/icons';
 
 import CardContainer from '../../containers/CardContainer';
 import styles from './styles';
 import { Card } from '../../typings';
+import { getCards, changeCardStatus } from '../../services/cardsServices';
 import { statuses } from '../../global/statuses.json'
-
-const cards: Array<Card> = [
-  {
-      "arrhythmias": [
-        "AFib",
-        "AV Block",
-        "Pause",
-        "PSVC",
-        "PVC"
-      ],
-      "created_date": "2020-03-10T13:14:59+0000",
-      "id": 0,
-      "patient_name": "Bob",
-      "status": "PENDING"
-    },
-    {
-      "arrhythmias": [
-        "Pause"
-      ],
-      "created_date": "2020-01-01T00:12:21+0000",
-      "id": 1,
-      "patient_name": "Bill",
-      "status": "COMPLETED"
-    },
-    {
-      "arrhythmias": [
-        "AFib",
-        "Pause"
-      ],
-      "created_date": "2019-12-31T00:11:14+0000",
-      "id": 2,
-      "patient_name": "Elsa",
-      "status": "DONE"
-    },
-];
-
-const getCardsByStatus = (status: string, cards: Array<Card>) => cards.filter(card => card.status === status);
 
 const CardTriagePage: FC = () => {
   const classes = makeStyles(styles)();
+  const [cards, setCards] = useState([]);
+  
+  const getCardsByStatus = (status: string, cards: Card[]) => cards.filter(card => card.status === status);
+
+  const handleClick = async (card: Card, status: string) => {
+    await changeCardStatus({ card, status });
+
+    await fetchData();
+  }
+
+  const fetchData = async () => {
+    const data = await getCards();
+
+    setCards(data);
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, [])
 
   return (
     <Container maxWidth={false}>
@@ -69,8 +52,7 @@ const CardTriagePage: FC = () => {
       <Grid container spacing={3}>
         {statuses.map((status: string) => {
           const statusCards = getCardsByStatus(status, cards);
-
-          return <CardContainer key={status} status={status} cards={statusCards} />
+          return <CardContainer key={status} status={status} cards={statusCards} handleClick={handleClick} />
         })}
       </Grid>
     </Container>

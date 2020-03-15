@@ -3,5 +3,5 @@ export interface Card{
     patient_name: string;
     id: number;
     created_date: string;
-    arrhythmias: Array<string>;
+    arrhythmias: string[];
 }

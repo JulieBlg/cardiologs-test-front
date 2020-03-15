@@ -30,7 +30,7 @@ const mockCard = [
 
 describe('PatientCard', () => {
   it('should render PatientCard properly with the status pending', () => {
-    const { getByText } = render(<PatientCard card={mockCard[0]} status={'PENDING'}/>);
+    const { getByText } = render(<PatientCard card={mockCard[0]} status={'PENDING'} handleClick={jest.fn()}/>);
 
     expect(getByText('COMPLETED')).toBeInTheDocument();
     expect(getByText('DONE')).toBeInTheDocument();
@@ -45,7 +45,7 @@ describe('PatientCard', () => {
   });
 
   it('should render PatientCard properly with the status done', () => {
-    const { getByText } = render(<PatientCard card={mockCard[1]} status={'DONE'}/>);
+    const { getByText } = render(<PatientCard card={mockCard[1]} status={'DONE'} handleClick={jest.fn()}/>);
 
     expect(getByText('PENDING')).toBeInTheDocument();
     expect(getByText('COMPLETED')).toBeInTheDocument();

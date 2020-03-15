@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { 
     Avatar, 
     Button,
-    Card, 
+    Card as MaterialCard, 
     Chip, 
     Grid,
     CardActions, 
@@ -13,20 +13,22 @@ import {
 } from '@material-ui/core';
 
 import styles from './styles';
-import { statuses } from '../../global/statuses.json'
+import { Card } from '../../typings';
+import { statuses } from '../../global/statuses.json';
 
 interface Props {
     card: any;
     status: string;
+    handleClick: (card: Card, statusButton: string) => void;
 }
 
-const PatientCard: FC<Props> = ({ card, status }) => {
+const PatientCard: FC<Props> = ({ card, status, handleClick }) => {
     const classes = makeStyles(styles)();
 
     return (
         <Grid container spacing={3}>
             <Grid item xs={12}>
-                <Card className={classes.patientCard}>
+                <MaterialCard className={classes.patientCard}>
                     <CardHeader 
                         title={card.patient_name} 
                         avatar={
@@ -52,14 +54,19 @@ const PatientCard: FC<Props> = ({ card, status }) => {
                         <Grid container justify="space-between">
                             {statuses.filter(globalStatus => globalStatus !== status).map(statusButton => 
                                 <Grid item key={statusButton}>
-                                    <Button size="small" variant="contained" className={classes.actionButton}>
+                                    <Button 
+                                        size="small" 
+                                        variant="contained" 
+                                        className={classes.actionButton}
+                                        onClick={() => handleClick(card, statusButton)} 
+                                    >
                                         {statusButton}
                                     </Button>
                                 </Grid>
                             )}
                         </Grid>
                     </CardActions>
-                </Card>
+                </MaterialCard>
             </Grid>
         </Grid>
     

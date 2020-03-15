@@ -7,10 +7,11 @@ import { Card } from '../../typings';
 
 interface Props {
     status: string;
-    cards: Array<Card>;
+    cards: Card[];
+    handleClick: (card: Card, statusButton: string) => void;
 }
 
-const CardContainer: FC<Props> = ({ status, cards }) => {
+const CardContainer: FC<Props> = ({ status, cards, handleClick }) => {
     const classes = makeStyles(styles)();
 
     return (
@@ -20,7 +21,7 @@ const CardContainer: FC<Props> = ({ status, cards }) => {
                     {status}
                 </Typography>
                 {cards.map(card => {
-                    return <PatientCard key={card.id} card={card} status={status} />
+                    return <PatientCard key={card.id} card={card} status={status} handleClick={handleClick}/>
                 })}
             </Paper>
         </Grid>
