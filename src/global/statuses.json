@@ -1,0 +1,7 @@
+{ 
+    "statuses" : [
+        "PENDING",
+        "COMPLETED",
+        "DONE"
+    ]
+}

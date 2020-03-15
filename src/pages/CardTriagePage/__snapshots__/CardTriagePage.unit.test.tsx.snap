@@ -2,6 +2,470 @@
 
 exports[`CardTriagePage should render CardTriagePage properly 1`] = `
 <div>
-  Hello World !
+  <div
+    class="MuiContainer-root"
+  >
+    <div
+      class="MuiGrid-root makeStyles-filtersBar-1 MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-justify-xs-flex-end"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3"
+      >
+        <div
+          class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
+            data-shrink="false"
+            for="filter"
+            id="filter-label"
+          >
+            Filter
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiOutlinedInput-adornedEnd"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd"
+              id="filter"
+              type="text"
+              value=""
+            />
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root"
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                />
+              </svg>
+            </div>
+            <fieldset
+              aria-hidden="true"
+              class="PrivateNotchedOutline-root-187 MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="PrivateNotchedOutline-legendLabelled-189"
+              >
+                <span>
+                  Filter
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div
+          class="MuiPaper-root makeStyles-patientCardContainer-191 MuiPaper-elevation2 MuiPaper-rounded"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"
+          >
+            PENDING
+          </h2>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <div
+                class="MuiPaper-root MuiCard-root makeStyles-patientCard-250 MuiPaper-elevation1 MuiPaper-rounded"
+              >
+                <div
+                  class="MuiCardHeader-root"
+                >
+                  <div
+                    class="MuiCardHeader-avatar"
+                  >
+                    <div
+                      class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+                    >
+                      B
+                    </div>
+                  </div>
+                  <div
+                    class="MuiCardHeader-content"
+                  >
+                    <span
+                      class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+                    >
+                      Bob
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    >
+                      Patient ID : 0
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardContent-root"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-listTitle-251 MuiTypography-body1"
+                  >
+                    Arrhythmias :
+                  </p>
+                  <div
+                    class="MuiGrid-root makeStyles-arrythmiasList-252 MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <div
+                      class="MuiChip-root makeStyles-arrythmia-253"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        AFib
+                      </span>
+                    </div>
+                    <div
+                      class="MuiChip-root makeStyles-arrythmia-253"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        AV Block
+                      </span>
+                    </div>
+                    <div
+                      class="MuiChip-root makeStyles-arrythmia-253"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        Pause
+                      </span>
+                    </div>
+                    <div
+                      class="MuiChip-root makeStyles-arrythmia-253"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        PSVC
+                      </span>
+                    </div>
+                    <div
+                      class="MuiChip-root makeStyles-arrythmia-253"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        PVC
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardActions-root"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+                  >
+                    <div
+                      class="MuiGrid-root MuiGrid-item"
+                    >
+                      <button
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-254 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label"
+                        >
+                          COMPLETED
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item"
+                    >
+                      <button
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-254 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label"
+                        >
+                          DONE
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div
+          class="MuiPaper-root makeStyles-patientCardContainer-334 MuiPaper-elevation2 MuiPaper-rounded"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"
+          >
+            COMPLETED
+          </h2>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <div
+                class="MuiPaper-root MuiCard-root makeStyles-patientCard-335 MuiPaper-elevation1 MuiPaper-rounded"
+              >
+                <div
+                  class="MuiCardHeader-root"
+                >
+                  <div
+                    class="MuiCardHeader-avatar"
+                  >
+                    <div
+                      class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+                    >
+                      B
+                    </div>
+                  </div>
+                  <div
+                    class="MuiCardHeader-content"
+                  >
+                    <span
+                      class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+                    >
+                      Bill
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    >
+                      Patient ID : 1
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardContent-root"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-listTitle-336 MuiTypography-body1"
+                  >
+                    Arrhythmias :
+                  </p>
+                  <div
+                    class="MuiGrid-root makeStyles-arrythmiasList-337 MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <div
+                      class="MuiChip-root makeStyles-arrythmia-338"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        Pause
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardActions-root"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+                  >
+                    <div
+                      class="MuiGrid-root MuiGrid-item"
+                    >
+                      <button
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-339 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label"
+                        >
+                          PENDING
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item"
+                    >
+                      <button
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-339 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label"
+                        >
+                          DONE
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+      >
+        <div
+          class="MuiPaper-root makeStyles-patientCardContainer-340 MuiPaper-elevation2 MuiPaper-rounded"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"
+          >
+            DONE
+          </h2>
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+            >
+              <div
+                class="MuiPaper-root MuiCard-root makeStyles-patientCard-341 MuiPaper-elevation1 MuiPaper-rounded"
+              >
+                <div
+                  class="MuiCardHeader-root"
+                >
+                  <div
+                    class="MuiCardHeader-avatar"
+                  >
+                    <div
+                      class="MuiAvatar-root MuiAvatar-circle MuiAvatar-colorDefault"
+                    >
+                      E
+                    </div>
+                  </div>
+                  <div
+                    class="MuiCardHeader-content"
+                  >
+                    <span
+                      class="MuiTypography-root MuiCardHeader-title MuiTypography-body2 MuiTypography-displayBlock"
+                    >
+                      Elsa
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiCardHeader-subheader MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+                    >
+                      Patient ID : 2
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardContent-root"
+                >
+                  <p
+                    class="MuiTypography-root makeStyles-listTitle-342 MuiTypography-body1"
+                  >
+                    Arrhythmias :
+                  </p>
+                  <div
+                    class="MuiGrid-root makeStyles-arrythmiasList-343 MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <div
+                      class="MuiChip-root makeStyles-arrythmia-344"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        AFib
+                      </span>
+                    </div>
+                    <div
+                      class="MuiChip-root makeStyles-arrythmia-344"
+                    >
+                      <span
+                        class="MuiChip-label"
+                      >
+                        Pause
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiCardActions-root"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
+                  >
+                    <div
+                      class="MuiGrid-root MuiGrid-item"
+                    >
+                      <button
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-345 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label"
+                        >
+                          PENDING
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item"
+                    >
+                      <button
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-345 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <span
+                          class="MuiButton-label"
+                        >
+                          COMPLETED
+                        </span>
+                        <span
+                          class="MuiTouchRipple-root"
+                        />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
