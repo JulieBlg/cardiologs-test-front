@@ -9,15 +9,16 @@ interface Props {
     status: string;
     cards: Card[];
     handleClick: (card: Card, statusButton: string) => void;
+    color: string;
 }
 
-const CardContainer: FC<Props> = ({ status, cards, handleClick }) => {
-    const classes = makeStyles(styles)();
+const CardContainer: FC<Props> = ({ status, cards, handleClick, color }) => {
+    const classes = makeStyles(styles)({ color });
 
     return (
         <Grid item xs={12} lg={4}>
-            <Paper elevation={2} className={classes.patientCardContainer} data-testid="cardContainer">
-                <Typography variant="h5" component="h2" align="center">
+            <Paper elevation={0} className={classes.patientCardContainer} data-testid="cardContainer">
+                <Typography variant="h5" component="h2" align="center" className={classes.cardHeader}>
                     {status}
                 </Typography>
                 {cards.length ? 

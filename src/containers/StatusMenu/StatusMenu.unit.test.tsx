@@ -12,7 +12,7 @@ describe('StatusMenu', () => {
   it('should render StatusMenu properly', async () => {
     const { getByText } = render(<StatusMenu options={mockOptions} />);
 
-    expect(getByText('Move Card To')).toBeInTheDocument();
+    expect(getByText('Move')).toBeInTheDocument();
     expect(getByText('Option 1')).toBeInTheDocument();
     expect(getByText('Option 2')).toBeInTheDocument();
   });

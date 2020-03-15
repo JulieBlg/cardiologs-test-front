@@ -7,7 +7,7 @@ import {
     CardContent, 
     CardHeader, 
     makeStyles, 
-    Typography 
+    MenuItem,
 } from '@material-ui/core';
 
 import StatusMenu from '../../containers/StatusMenu';
@@ -29,7 +29,7 @@ const PatientCard: FC<Props> = ({ card, status, handleClick }) => {
             <Grid item xs={12}>
                 <MaterialCard className={classes.patientCard}>
                     <CardHeader 
-                        title={card.patient_name} 
+                        title={card.patient_name}
                         avatar={
                             <Avatar>
                                 {card.patient_name[0]}
@@ -38,22 +38,33 @@ const PatientCard: FC<Props> = ({ card, status, handleClick }) => {
                         subheader={`Patient ID : ${card.id}`}
                         action={
                             <StatusMenu 
-                                options={statuses.filter(globalStatus => globalStatus !== status).map(statusButton => 
-                                    <Grid item key={statusButton} onClick={() => handleClick(card, statusButton)} data-testid='menuOption'>
-                                        {statusButton}
-                                    </Grid>
-                                )}
+                                options={
+                                    statuses
+                                        .filter(globalStatus => globalStatus.name !== status)
+                                        .map(({name: statusButton}) => 
+                                            <MenuItem 
+                                                key={statusButton} 
+                                                onClick={() => handleClick(card, statusButton)} 
+                                                data-testid='menuOption'
+                                            >
+                                                {statusButton}
+                                            </MenuItem>
+                                        )
+                                }
                             />
                         }
                     />
                     <CardContent>
-                        <Typography variant="body1" className={classes.listTitle}>
-                            Arrhythmias :
-                        </Typography>
                         <Grid item xs={12} className={classes.arrythmiasList}>
                             {card.arrhythmias.map((arrhythmia: string) => {
                                 return (
-                                    <Chip key={arrhythmia} label={arrhythmia} className={classes.arrythmia}/>
+                                    <Chip 
+                                        key={arrhythmia} 
+                                        label={arrhythmia} 
+                                        className={classes.arrythmia}
+                                        variant="outlined"
+                                        size="small"
+                                    />
                                 );
                             })}
                         </Grid>

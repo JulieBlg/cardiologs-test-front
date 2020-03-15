@@ -39,7 +39,7 @@ const CardTriagePage: FC = () => {
   return (
     <Container maxWidth={false}>
       <Grid container spacing={3} justify="flex-end" className={classes.filtersBar}>
-        <Grid item xs={3}>
+        <Grid item xs={12} lg={3}>
           <TextField 
             id="filter" 
             label="Filter" 
@@ -57,9 +57,9 @@ const CardTriagePage: FC = () => {
         </Grid>
       </Grid>
       <Grid container spacing={3}>
-        {statuses.map((status: string) => {
-          const statusCards = getCardsByStatus(status, cards);
-          return <CardContainer key={status} status={status} cards={statusCards} handleClick={handleClick} />
+        {statuses.map(({ name, color }) => {
+          const statusCards = getCardsByStatus(name, cards);
+          return <CardContainer key={name} status={name} cards={statusCards} handleClick={handleClick} color={color}/>
         })}
       </Grid>
     </Container>

@@ -14,8 +14,7 @@ const styles = (theme: Theme) => ({
     },
     arrythmia: {
         marginRight: theme.spacing(1),
-        backgroundColor: '#bdbdbd',
-        color: 'white',
+        borderRadius: '4px !important',
     },
     actionButton: {
         boxShadow: 'none',

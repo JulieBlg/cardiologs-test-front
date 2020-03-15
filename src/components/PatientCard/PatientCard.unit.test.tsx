@@ -34,7 +34,7 @@ describe('PatientCard', () => {
 
     expect(getByText('Bob')).toBeInTheDocument();
     expect(getByText('Patient ID : 0')).toBeInTheDocument();
-    expect(getByText('Move Card To')).toBeInTheDocument();
+    expect(getByText('Move')).toBeInTheDocument();
 
     const arrhythmias = mockCard[0].arrhythmias;
 
@@ -48,7 +48,7 @@ describe('PatientCard', () => {
 
     expect(getByText('Elsa')).toBeInTheDocument();
     expect(getByText('Patient ID : 2')).toBeInTheDocument();
-    expect(getByText('Move Card To')).toBeInTheDocument();
+    expect(getByText('Move')).toBeInTheDocument();
 
     const arrhythmias = mockCard[1].arrhythmias;
 

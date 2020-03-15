@@ -1,8 +1,6 @@
 import React, { FC, ReactNode } from 'react';
-import { ArrowRight } from '@material-ui/icons';
 import { Button, makeStyles } from '@material-ui/core';
 import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
 
 import styles from './styles';
 
@@ -31,8 +29,7 @@ const StatusMenu: FC<Props> = ({ options }) => {
             onClick={handleClick}
             className={classes.menuButton}
         >
-            Move Card To
-            <ArrowRight />
+            Move
         </Button>
         <Menu
             id="long-menu"
@@ -41,12 +38,7 @@ const StatusMenu: FC<Props> = ({ options }) => {
             open={open}
             onClose={handleClose}
         >
-            {options.map((option: ReactNode, index: number) => {
-                return (
-                <MenuItem onClick={handleClose} key={index}>
-                    {option}
-                </MenuItem>);
-            })}
+            {options.map((option: ReactNode) => option)}
         </Menu>
     </div>
   );

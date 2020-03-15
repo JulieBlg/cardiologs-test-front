@@ -77,7 +77,7 @@ describe('CardTriagePage', () => {
     var secondColumnCards = getAllByTestId(secondColumn, 'patientCard');
     expect(secondColumnCards).toHaveLength(1);
 
-    const movingCardButton = getByText(firstColumnCards[0], 'Move Card To');
+    const movingCardButton = getByText(firstColumnCards[0], 'Move');
     movingCardButton.click();
 
     const options = await findAllByTestId('menuOption');

@@ -1,7 +1,16 @@
 { 
     "statuses" : [
-        "PENDING",
-        "COMPLETED",
-        "DONE"
+        {
+            "name": "PENDING",
+            "color": "#FFA726"
+        },
+        {
+            "name": "COMPLETED",
+            "color": "#FDD835"
+        },
+        {
+            "name": "DONE",
+            "color": "#CDDC39"
+        }
     ]
 }

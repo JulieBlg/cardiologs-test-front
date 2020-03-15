@@ -6,10 +6,10 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
     class="MuiContainer-root"
   >
     <div
-      class="MuiGrid-root makeStyles-filtersBar-255 MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-justify-xs-flex-end"
+      class="MuiGrid-root makeStyles-filtersBar-264 MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-justify-xs-flex-end"
     >
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-3"
       >
         <div
           class="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
@@ -67,14 +67,14 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
       class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
     >
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4"
       >
         <div
-          class="MuiPaper-root makeStyles-patientCardContainer-256 MuiPaper-elevation2 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-patientCardContainer-265 makeStyles-patientCardContainer-268 MuiPaper-elevation0 MuiPaper-rounded"
           data-testid="cardContainer"
         >
           <h2
-            class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"
+            class="MuiTypography-root makeStyles-cardHeader-267 makeStyles-cardHeader-269 MuiTypography-h5 MuiTypography-alignCenter"
           >
             PENDING
           </h2>
@@ -86,7 +86,7 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
             >
               <div
-                class="MuiPaper-root MuiCard-root makeStyles-patientCard-258 MuiPaper-elevation1 MuiPaper-rounded"
+                class="MuiPaper-root MuiCard-root makeStyles-patientCard-270 MuiPaper-elevation1 MuiPaper-rounded"
               >
                 <div
                   class="MuiCardHeader-root"
@@ -119,25 +119,14 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
                   >
                     <div>
                       <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-menuButton-277 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-menuButton-289 MuiButton-containedSizeSmall MuiButton-sizeSmall"
                         tabindex="0"
                         type="button"
                       >
                         <span
                           class="MuiButton-label"
                         >
-                          Move Card To
-                          <svg
-                            aria-hidden="true"
-                            class="MuiSvgIcon-root"
-                            focusable="false"
-                            role="presentation"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M10 17l5-5-5-5v10z"
-                            />
-                          </svg>
+                          Move
                         </span>
                         <span
                           class="MuiTouchRipple-root"
@@ -149,55 +138,50 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
                 <div
                   class="MuiCardContent-root"
                 >
-                  <p
-                    class="MuiTypography-root makeStyles-listTitle-259 MuiTypography-body1"
-                  >
-                    Arrhythmias :
-                  </p>
                   <div
-                    class="MuiGrid-root makeStyles-arrythmiasList-260 MuiGrid-item MuiGrid-grid-xs-12"
+                    class="MuiGrid-root makeStyles-arrythmiasList-272 MuiGrid-item MuiGrid-grid-xs-12"
                   >
                     <div
-                      class="MuiChip-root makeStyles-arrythmia-261"
+                      class="MuiChip-root makeStyles-arrythmia-273 MuiChip-outlined MuiChip-sizeSmall"
                     >
                       <span
-                        class="MuiChip-label"
+                        class="MuiChip-label MuiChip-labelSmall"
                       >
                         AFib
                       </span>
                     </div>
                     <div
-                      class="MuiChip-root makeStyles-arrythmia-261"
+                      class="MuiChip-root makeStyles-arrythmia-273 MuiChip-outlined MuiChip-sizeSmall"
                     >
                       <span
-                        class="MuiChip-label"
+                        class="MuiChip-label MuiChip-labelSmall"
                       >
                         AV Block
                       </span>
                     </div>
                     <div
-                      class="MuiChip-root makeStyles-arrythmia-261"
+                      class="MuiChip-root makeStyles-arrythmia-273 MuiChip-outlined MuiChip-sizeSmall"
                     >
                       <span
-                        class="MuiChip-label"
+                        class="MuiChip-label MuiChip-labelSmall"
                       >
                         Pause
                       </span>
                     </div>
                     <div
-                      class="MuiChip-root makeStyles-arrythmia-261"
+                      class="MuiChip-root makeStyles-arrythmia-273 MuiChip-outlined MuiChip-sizeSmall"
                     >
                       <span
-                        class="MuiChip-label"
+                        class="MuiChip-label MuiChip-labelSmall"
                       >
                         PSVC
                       </span>
                     </div>
                     <div
-                      class="MuiChip-root makeStyles-arrythmia-261"
+                      class="MuiChip-root makeStyles-arrythmia-273 MuiChip-outlined MuiChip-sizeSmall"
                     >
                       <span
-                        class="MuiChip-label"
+                        class="MuiChip-label MuiChip-labelSmall"
                       >
                         PVC
                       </span>
@@ -210,14 +194,14 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4"
       >
         <div
-          class="MuiPaper-root makeStyles-patientCardContainer-345 MuiPaper-elevation2 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-patientCardContainer-357 makeStyles-patientCardContainer-360 MuiPaper-elevation0 MuiPaper-rounded"
           data-testid="cardContainer"
         >
           <h2
-            class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"
+            class="MuiTypography-root makeStyles-cardHeader-359 makeStyles-cardHeader-361 MuiTypography-h5 MuiTypography-alignCenter"
           >
             COMPLETED
           </h2>
@@ -229,7 +213,7 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
             >
               <div
-                class="MuiPaper-root MuiCard-root makeStyles-patientCard-347 MuiPaper-elevation1 MuiPaper-rounded"
+                class="MuiPaper-root MuiCard-root makeStyles-patientCard-362 MuiPaper-elevation1 MuiPaper-rounded"
               >
                 <div
                   class="MuiCardHeader-root"
@@ -262,25 +246,14 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
                   >
                     <div>
                       <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-menuButton-352 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-menuButton-367 MuiButton-containedSizeSmall MuiButton-sizeSmall"
                         tabindex="0"
                         type="button"
                       >
                         <span
                           class="MuiButton-label"
                         >
-                          Move Card To
-                          <svg
-                            aria-hidden="true"
-                            class="MuiSvgIcon-root"
-                            focusable="false"
-                            role="presentation"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M10 17l5-5-5-5v10z"
-                            />
-                          </svg>
+                          Move
                         </span>
                         <span
                           class="MuiTouchRipple-root"
@@ -292,19 +265,14 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
                 <div
                   class="MuiCardContent-root"
                 >
-                  <p
-                    class="MuiTypography-root makeStyles-listTitle-348 MuiTypography-body1"
-                  >
-                    Arrhythmias :
-                  </p>
                   <div
-                    class="MuiGrid-root makeStyles-arrythmiasList-349 MuiGrid-item MuiGrid-grid-xs-12"
+                    class="MuiGrid-root makeStyles-arrythmiasList-364 MuiGrid-item MuiGrid-grid-xs-12"
                   >
                     <div
-                      class="MuiChip-root makeStyles-arrythmia-350"
+                      class="MuiChip-root makeStyles-arrythmia-365 MuiChip-outlined MuiChip-sizeSmall"
                     >
                       <span
-                        class="MuiChip-label"
+                        class="MuiChip-label MuiChip-labelSmall"
                       >
                         Pause
                       </span>
@@ -317,14 +285,14 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
         </div>
       </div>
       <div
-        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
+        class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-lg-4"
       >
         <div
-          class="MuiPaper-root makeStyles-patientCardContainer-353 MuiPaper-elevation2 MuiPaper-rounded"
+          class="MuiPaper-root makeStyles-patientCardContainer-368 makeStyles-patientCardContainer-371 MuiPaper-elevation0 MuiPaper-rounded"
           data-testid="cardContainer"
         >
           <h2
-            class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"
+            class="MuiTypography-root makeStyles-cardHeader-370 makeStyles-cardHeader-372 MuiTypography-h5 MuiTypography-alignCenter"
           >
             DONE
           </h2>
@@ -336,7 +304,7 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
               class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
             >
               <div
-                class="MuiPaper-root MuiCard-root makeStyles-patientCard-355 MuiPaper-elevation1 MuiPaper-rounded"
+                class="MuiPaper-root MuiCard-root makeStyles-patientCard-373 MuiPaper-elevation1 MuiPaper-rounded"
               >
                 <div
                   class="MuiCardHeader-root"
@@ -369,25 +337,14 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
                   >
                     <div>
                       <button
-                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-menuButton-360 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-menuButton-378 MuiButton-containedSizeSmall MuiButton-sizeSmall"
                         tabindex="0"
                         type="button"
                       >
                         <span
                           class="MuiButton-label"
                         >
-                          Move Card To
-                          <svg
-                            aria-hidden="true"
-                            class="MuiSvgIcon-root"
-                            focusable="false"
-                            role="presentation"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M10 17l5-5-5-5v10z"
-                            />
-                          </svg>
+                          Move
                         </span>
                         <span
                           class="MuiTouchRipple-root"
@@ -399,28 +356,23 @@ exports[`CardTriagePage should render CardTriagePage properly 1`] = `
                 <div
                   class="MuiCardContent-root"
                 >
-                  <p
-                    class="MuiTypography-root makeStyles-listTitle-356 MuiTypography-body1"
-                  >
-                    Arrhythmias :
-                  </p>
                   <div
-                    class="MuiGrid-root makeStyles-arrythmiasList-357 MuiGrid-item MuiGrid-grid-xs-12"
+                    class="MuiGrid-root makeStyles-arrythmiasList-375 MuiGrid-item MuiGrid-grid-xs-12"
                   >
                     <div
-                      class="MuiChip-root makeStyles-arrythmia-358"
+                      class="MuiChip-root makeStyles-arrythmia-376 MuiChip-outlined MuiChip-sizeSmall"
                     >
                       <span
-                        class="MuiChip-label"
+                        class="MuiChip-label MuiChip-labelSmall"
                       >
                         AFib
                       </span>
                     </div>
                     <div
-                      class="MuiChip-root makeStyles-arrythmia-358"
+                      class="MuiChip-root makeStyles-arrythmia-376 MuiChip-outlined MuiChip-sizeSmall"
                     >
                       <span
-                        class="MuiChip-label"
+                        class="MuiChip-label MuiChip-labelSmall"
                       >
                         Pause
                       </span>
