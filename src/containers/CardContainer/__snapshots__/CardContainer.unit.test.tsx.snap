@@ -3,10 +3,11 @@
 exports[`CardContainer should render CardContainer properly 1`] = `
 <div>
   <div
-    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4"
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
   >
     <div
       class="MuiPaper-root makeStyles-patientCardContainer-1 MuiPaper-elevation2 MuiPaper-rounded"
+      data-testid="cardContainer"
     >
       <h2
         class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"
@@ -15,12 +16,13 @@ exports[`CardContainer should render CardContainer properly 1`] = `
       </h2>
       <div
         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+        data-testid="patientCard"
       >
         <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
         >
           <div
-            class="MuiPaper-root MuiCard-root makeStyles-patientCard-163 MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root makeStyles-patientCard-164 MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardHeader-root"
@@ -48,20 +50,51 @@ exports[`CardContainer should render CardContainer properly 1`] = `
                   Patient ID : 0
                 </span>
               </div>
+              <div
+                class="MuiCardHeader-action"
+              >
+                <div>
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-menuButton-183 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      Move Card To
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        role="presentation"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M10 17l5-5-5-5v10z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </div>
+              </div>
             </div>
             <div
               class="MuiCardContent-root"
             >
               <p
-                class="MuiTypography-root makeStyles-listTitle-164 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listTitle-165 MuiTypography-body1"
               >
                 Arrhythmias :
               </p>
               <div
-                class="MuiGrid-root makeStyles-arrythmiasList-165 MuiGrid-item MuiGrid-grid-xs-12"
+                class="MuiGrid-root makeStyles-arrythmiasList-166 MuiGrid-item MuiGrid-grid-xs-12"
               >
                 <div
-                  class="MuiChip-root makeStyles-arrythmia-166"
+                  class="MuiChip-root makeStyles-arrythmia-167"
                 >
                   <span
                     class="MuiChip-label"
@@ -70,7 +103,7 @@ exports[`CardContainer should render CardContainer properly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root makeStyles-arrythmia-166"
+                  class="MuiChip-root makeStyles-arrythmia-167"
                 >
                   <span
                     class="MuiChip-label"
@@ -79,7 +112,7 @@ exports[`CardContainer should render CardContainer properly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root makeStyles-arrythmia-166"
+                  class="MuiChip-root makeStyles-arrythmia-167"
                 >
                   <span
                     class="MuiChip-label"
@@ -88,7 +121,7 @@ exports[`CardContainer should render CardContainer properly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root makeStyles-arrythmia-166"
+                  class="MuiChip-root makeStyles-arrythmia-167"
                 >
                   <span
                     class="MuiChip-label"
@@ -97,7 +130,7 @@ exports[`CardContainer should render CardContainer properly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root makeStyles-arrythmia-166"
+                  class="MuiChip-root makeStyles-arrythmia-167"
                 >
                   <span
                     class="MuiChip-label"
@@ -107,61 +140,18 @@ exports[`CardContainer should render CardContainer properly 1`] = `
                 </div>
               </div>
             </div>
-            <div
-              class="MuiCardActions-root"
-            >
-              <div
-                class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
-              >
-                <div
-                  class="MuiGrid-root MuiGrid-item"
-                >
-                  <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-167 MuiButton-containedSizeSmall MuiButton-sizeSmall"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <span
-                      class="MuiButton-label"
-                    >
-                      COMPLETED
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-item"
-                >
-                  <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-167 MuiButton-containedSizeSmall MuiButton-sizeSmall"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <span
-                      class="MuiButton-label"
-                    >
-                      DONE
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
       <div
         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+        data-testid="patientCard"
       >
         <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
         >
           <div
-            class="MuiPaper-root MuiCard-root makeStyles-patientCard-247 MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root makeStyles-patientCard-260 MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardHeader-root"
@@ -189,20 +179,51 @@ exports[`CardContainer should render CardContainer properly 1`] = `
                   Patient ID : 1
                 </span>
               </div>
+              <div
+                class="MuiCardHeader-action"
+              >
+                <div>
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-menuButton-265 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      Move Card To
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        role="presentation"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M10 17l5-5-5-5v10z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </div>
+              </div>
             </div>
             <div
               class="MuiCardContent-root"
             >
               <p
-                class="MuiTypography-root makeStyles-listTitle-248 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listTitle-261 MuiTypography-body1"
               >
                 Arrhythmias :
               </p>
               <div
-                class="MuiGrid-root makeStyles-arrythmiasList-249 MuiGrid-item MuiGrid-grid-xs-12"
+                class="MuiGrid-root makeStyles-arrythmiasList-262 MuiGrid-item MuiGrid-grid-xs-12"
               >
                 <div
-                  class="MuiChip-root makeStyles-arrythmia-250"
+                  class="MuiChip-root makeStyles-arrythmia-263"
                 >
                   <span
                     class="MuiChip-label"
@@ -212,61 +233,18 @@ exports[`CardContainer should render CardContainer properly 1`] = `
                 </div>
               </div>
             </div>
-            <div
-              class="MuiCardActions-root"
-            >
-              <div
-                class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
-              >
-                <div
-                  class="MuiGrid-root MuiGrid-item"
-                >
-                  <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-251 MuiButton-containedSizeSmall MuiButton-sizeSmall"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <span
-                      class="MuiButton-label"
-                    >
-                      COMPLETED
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-item"
-                >
-                  <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-251 MuiButton-containedSizeSmall MuiButton-sizeSmall"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <span
-                      class="MuiButton-label"
-                    >
-                      DONE
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
       <div
         class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3"
+        data-testid="patientCard"
       >
         <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
         >
           <div
-            class="MuiPaper-root MuiCard-root makeStyles-patientCard-252 MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root makeStyles-patientCard-266 MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardHeader-root"
@@ -294,20 +272,51 @@ exports[`CardContainer should render CardContainer properly 1`] = `
                   Patient ID : 2
                 </span>
               </div>
+              <div
+                class="MuiCardHeader-action"
+              >
+                <div>
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-menuButton-271 MuiButton-containedSizeSmall MuiButton-sizeSmall"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-label"
+                    >
+                      Move Card To
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root"
+                        focusable="false"
+                        role="presentation"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M10 17l5-5-5-5v10z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
+                  </button>
+                </div>
+              </div>
             </div>
             <div
               class="MuiCardContent-root"
             >
               <p
-                class="MuiTypography-root makeStyles-listTitle-253 MuiTypography-body1"
+                class="MuiTypography-root makeStyles-listTitle-267 MuiTypography-body1"
               >
                 Arrhythmias :
               </p>
               <div
-                class="MuiGrid-root makeStyles-arrythmiasList-254 MuiGrid-item MuiGrid-grid-xs-12"
+                class="MuiGrid-root makeStyles-arrythmiasList-268 MuiGrid-item MuiGrid-grid-xs-12"
               >
                 <div
-                  class="MuiChip-root makeStyles-arrythmia-255"
+                  class="MuiChip-root makeStyles-arrythmia-269"
                 >
                   <span
                     class="MuiChip-label"
@@ -316,7 +325,7 @@ exports[`CardContainer should render CardContainer properly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root makeStyles-arrythmia-255"
+                  class="MuiChip-root makeStyles-arrythmia-269"
                 >
                   <span
                     class="MuiChip-label"
@@ -326,53 +335,33 @@ exports[`CardContainer should render CardContainer properly 1`] = `
                 </div>
               </div>
             </div>
-            <div
-              class="MuiCardActions-root"
-            >
-              <div
-                class="MuiGrid-root MuiGrid-container MuiGrid-justify-xs-space-between"
-              >
-                <div
-                  class="MuiGrid-root MuiGrid-item"
-                >
-                  <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-256 MuiButton-containedSizeSmall MuiButton-sizeSmall"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <span
-                      class="MuiButton-label"
-                    >
-                      COMPLETED
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </div>
-                <div
-                  class="MuiGrid-root MuiGrid-item"
-                >
-                  <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-actionButton-256 MuiButton-containedSizeSmall MuiButton-sizeSmall"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <span
-                      class="MuiButton-label"
-                    >
-                      DONE
-                    </span>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CardContainer should render CardContainer properly 2`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4"
+  >
+    <div
+      class="MuiPaper-root makeStyles-patientCardContainer-301 MuiPaper-elevation2 MuiPaper-rounded"
+      data-testid="cardContainer"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"
+      >
+        PENDING
+      </h2>
+      <p
+        class="MuiTypography-root makeStyles-noPatient-302 MuiTypography-body2 MuiTypography-alignCenter"
+      >
+        No patient
+      </p>
     </div>
   </div>
 </div>

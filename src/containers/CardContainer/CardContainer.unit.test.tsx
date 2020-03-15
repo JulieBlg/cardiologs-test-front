@@ -44,5 +44,11 @@ describe('CardContainer', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should render CardContainer properly', () => {
+    const { container } = render(<CardContainer status="PENDING" cards={[]} handleClick={jest.fn()}/>);
+
+    expect(container).toMatchSnapshot();
+  });
 })
 

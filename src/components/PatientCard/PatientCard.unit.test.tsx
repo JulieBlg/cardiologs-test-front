@@ -32,10 +32,9 @@ describe('PatientCard', () => {
   it('should render PatientCard properly with the status pending', () => {
     const { getByText } = render(<PatientCard card={mockCard[0]} status={'PENDING'} handleClick={jest.fn()}/>);
 
-    expect(getByText('COMPLETED')).toBeInTheDocument();
-    expect(getByText('DONE')).toBeInTheDocument();
     expect(getByText('Bob')).toBeInTheDocument();
     expect(getByText('Patient ID : 0')).toBeInTheDocument();
+    expect(getByText('Move Card To')).toBeInTheDocument();
 
     const arrhythmias = mockCard[0].arrhythmias;
 
@@ -47,10 +46,9 @@ describe('PatientCard', () => {
   it('should render PatientCard properly with the status done', () => {
     const { getByText } = render(<PatientCard card={mockCard[1]} status={'DONE'} handleClick={jest.fn()}/>);
 
-    expect(getByText('PENDING')).toBeInTheDocument();
-    expect(getByText('COMPLETED')).toBeInTheDocument();
     expect(getByText('Elsa')).toBeInTheDocument();
     expect(getByText('Patient ID : 2')).toBeInTheDocument();
+    expect(getByText('Move Card To')).toBeInTheDocument();
 
     const arrhythmias = mockCard[1].arrhythmias;
 

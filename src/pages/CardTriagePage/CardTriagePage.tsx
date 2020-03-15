@@ -1,11 +1,11 @@
-import React, { FC, useEffect, useState } from 'react';
+import React, { FC, useEffect, useState, ChangeEvent } from 'react';
 import { Container, Grid, InputAdornment, TextField, makeStyles } from '@material-ui/core';
 import { Search } from '@material-ui/icons';
 
 import CardContainer from '../../containers/CardContainer';
 import styles from './styles';
 import { Card } from '../../typings';
-import { getCards, changeCardStatus } from '../../services/cardsServices';
+import { getCards, updateCardStatus, searchCards } from '../../services/cardsServices';
 import { statuses } from '../../global/statuses.json'
 
 const CardTriagePage: FC = () => {
@@ -15,7 +15,7 @@ const CardTriagePage: FC = () => {
   const getCardsByStatus = (status: string, cards: Card[]) => cards.filter(card => card.status === status);
 
   const handleClick = async (card: Card, status: string) => {
-    await changeCardStatus({ card, status });
+    await updateCardStatus({ card, status });
 
     await fetchData();
   }
@@ -26,9 +26,15 @@ const CardTriagePage: FC = () => {
     setCards(data);
   }
 
+  const filterCards = async (event:ChangeEvent<HTMLInputElement>) => {
+    const data = await searchCards(event.target.value);
+
+    setCards(data);
+  }
+
   useEffect(() => {
     fetchData();
-  }, [])
+  }, []);
 
   return (
     <Container maxWidth={false}>
@@ -38,7 +44,8 @@ const CardTriagePage: FC = () => {
             id="filter" 
             label="Filter" 
             variant="outlined" 
-            fullWidth 
+            fullWidth
+            onChange={filterCards}
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
