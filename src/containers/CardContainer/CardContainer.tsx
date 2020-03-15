@@ -15,7 +15,7 @@ const CardContainer: FC<Props> = ({ status, cards, handleClick }) => {
     const classes = makeStyles(styles)();
 
     return (
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} lg={4}>
             <Paper elevation={2} className={classes.patientCardContainer} data-testid="cardContainer">
                 <Typography variant="h5" component="h2" align="center">
                     {status}
